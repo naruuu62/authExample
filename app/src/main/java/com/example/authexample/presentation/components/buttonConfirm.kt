@@ -42,7 +42,7 @@ fun ButtonConfirm(text: String, onClick: ()-> Unit){
 fun GoogleButton(onClicked: () -> Unit) {
     Button(
         onClick = ({
-            onClicked
+            onClicked()
         }),
         colors = ButtonColors(
             containerColor = Color.White,

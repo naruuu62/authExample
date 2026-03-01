@@ -5,12 +5,16 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.authexample.presentation.authentication.LoginPage
+import com.example.authexample.presentation.authentication.ResetPasswordPage
 import com.example.authexample.presentation.authentication.SignupPage
+import com.example.authexample.presentation.authentication.UpdatePasswordPage
 
 @Composable
 fun RouteClass(navHostController: NavHostController){
     NavHost(navController = navHostController, startDestination = "signup"){
         composable("login") { LoginPage(navHostController) }
         composable("signup") { SignupPage(navHostController) }
+        composable("reset") { ResetPasswordPage(navHostController) }
+        composable("update-password") { UpdatePasswordPage(navHostController) }
     }
 }
